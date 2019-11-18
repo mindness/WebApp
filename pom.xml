@@ -8,10 +8,10 @@
 		<version>2.2.1.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.mindness.websitebdd</groupId>
+	<groupId>com.mindness.webappback</groupId>
 	<artifactId>websitebdd</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>websitebdd</name>
+	<name>WebAppBack</name>
 	<description>my bdd website film anime serie and file maybe</description>
 
 	<properties>

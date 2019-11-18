@@ -1,4 +1,4 @@
-package com.mindness.websitebdd.exception;
+package com.mindness.webappback.exception;
 
 import java.util.Date;
 
