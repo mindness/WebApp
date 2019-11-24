@@ -58,4 +58,16 @@ public class Film {
     @Column(name = "Synopsis", nullable = false)
     public String getSynopsis() {return synopsis;}
     public void setSynopsis(String synopsis) {this.synopsis = synopsis;}
+
+    @Override
+    public String toString() {
+        return "Film{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", affiche='" + affiche + '\'' +
+                ", dateSortie='" + dateSortie + '\'' +
+                ", note=" + note +
+                ", synopsis='" + synopsis + '\'' +
+                '}';
+    }
 }

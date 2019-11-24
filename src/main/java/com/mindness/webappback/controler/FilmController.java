@@ -43,7 +43,10 @@ public class FilmController {
 
     @PostMapping("/films")
     public Film createFilm(@Valid @RequestBody Film film) {
-        film.setDateSortie(film.getDateSortie().substring(0,film.getDateSortie().indexOf("T")));
+
+        ldt = LocalDate.parse(film.getDateSortie().substring(0,10), DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        film.setDateSortie(DateTimeFormatter.ofPattern("dd/MM/yyyy", Locale.FRANCE).format(ldt));
+
         return filmRepository.save(film);
     }
 
