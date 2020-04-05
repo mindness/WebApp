@@ -21,7 +21,7 @@ public class Film {
 
     }
 
-    public Film(long id, String name,String affiche, String dateSortie, float note, String synopsis) {
+    public Film(long id, String name, String affiche, String dateSortie, float note, String synopsis) {
         this.id = id;
         this.name = name;
         this.affiche = affiche;
